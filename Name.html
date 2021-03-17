@@ -1,0 +1,13 @@
+<p>First name: <strong data-bind="text: firstName">todo</strong></p>
+<p>Last name: <strong data-bind="text: lastName">todo</strong></p>
+
+<script src="knockout-3.5.1.js"></script>
+
+<script>
+function AppViewModel() {
+    this.firstName = "Linkesh";
+    this.lastName = "Kanna";
+}
+
+ko.applyBindings(new AppViewModel());
+</script>
